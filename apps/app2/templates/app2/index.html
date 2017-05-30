@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>App 2</h1>
+  <a href="{% url 'app1:index' %}">Go to App 1</a>
+
+  <form action="{% url 'app2:post_test'%}" method="Post">
+    {% csrf_token %}
+    <input type="hidden" value="100" name="hidden">
+    <input type="submit" value="Go!">
+  </form>
+</body>
+</html>

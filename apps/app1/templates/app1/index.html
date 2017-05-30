@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>App 1</h1>
+    {% for id in ids%}
+      <a href="{% url 'app2:index' schmoo=id %}">Go to App 2</a>
+    {% endfor %}
+</body>
+</html>
